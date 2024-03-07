@@ -4,7 +4,7 @@ import { increment } from '../Redux/Counter/countActions'
 
 function HooksCounter() {
     const numOfCakes = useSelector(state => {
-        return state.count
+        return state.count.count
     })
     const dispatch = useDispatch()
     return (

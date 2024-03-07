@@ -9,7 +9,7 @@ export const countReducer = (state = intialState, action) => {
         case INCREMENT:
             return {
                 ...state,
-                count: state.count + 1
+                count: Number(state.count) + Number(action.payload)
             }
         default:
             return state

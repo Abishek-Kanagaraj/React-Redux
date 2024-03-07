@@ -1,7 +1,8 @@
 import { INCREMENT } from "./countTypes"
 
-export const increment = () => {
+export const increment = (number = 1) => {
     return {
-        type: INCREMENT
+        type: INCREMENT,
+        payload: number
     }
 }

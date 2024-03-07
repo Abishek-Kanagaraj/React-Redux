@@ -4,6 +4,8 @@ import store from './Redux/store';
 import './App.css';
 import Counter from './Components/counter';
 import HooksCounter from './Components/hooksCounter';
+import NewCounter from './Components/newCounter';
+import UserContainer from './Components/userContainer';
 
 
 function App() {
@@ -12,6 +14,8 @@ function App() {
       <div className="App">
         <HooksCounter />
         <Counter />
+        <NewCounter/>
+        {/* <UserContainer/> */}
       </div>
     </Provider>
   );
